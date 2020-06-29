@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:music_player/constant/route_names.dart';
+import 'package:music_player/ui/views/artist_view.dart';
 import 'package:music_player/ui/views/startup_view.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
@@ -8,6 +9,11 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return _getPageRoute(
         routeName: settings.name,
         viewToShow: StartupView(),
+      );
+    case ArtistViewRoute:
+      return _getPageRoute(
+        routeName: settings.name,
+        viewToShow: ArtistView(),
       );
 
     default:

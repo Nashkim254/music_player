@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      initialRoute: StartupViewRoute,
+      initialRoute: ArtistViewRoute,
       onGenerateRoute: generateRoute,
     );
   }
